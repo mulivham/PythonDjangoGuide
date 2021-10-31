@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'base.css' %}"/>
+    {% block header_extends %}{% endblock %}
+</head>
+<body>
+    <div class="nav">
+        <a class="logo" href="{% url 'home' %}">
+            <h3>HOME</h3>
+        </a>
+        <a href="/list">COMMUNITY</a>
+        <a href="{% url 'information' %}">INFORMATION</a>
+        <a href="../contact/">CONTACT</a>
+    </div>
+    {% block content %}{% endblock %}
+</body>
+</html

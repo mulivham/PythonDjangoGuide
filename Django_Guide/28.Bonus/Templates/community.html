@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+<!--- ------------ Next ---------------- --->
+
+{% block title %} 
+
+{{ object.title }}
+
+{% endblock %}
+
+ <!--- ------------ Next ---------------- --->
+
+{% block header_extends %}
+<hr>
+<h1>{{object.title}}</h1>
+    
+{% endblock %}
+
+<!--- ------------ Next ---------------- --->
+
+{% block content %}
+
+                
+               
+                <p>{{object.content}}</p>
+
+                {% if object.image %}
+
+                <img src="{{ object.image.url }}" alt="{{object.title}}" class="img-responsive" />
+
+                {% endif %}
+
+{% endblock %}
+
+<!--- ------------ Next ---------------- --->

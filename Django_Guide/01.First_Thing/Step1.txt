@@ -1,0 +1,18 @@
+1. Download IDE 
+	- Recommended
+		- Subline
+		- Visual Studio Code 
+		- PyCharm
+
+2. Create a Folder 
+	- Example
+		- /home/MyDev/TutsDjango/Step1/
+
+3. Give a Folder a name like "MyWeb, WebDev?"
+
+4. Open Terminal/CMD/Command Prompt/Powershell
+(See ScreenShot)
+
+5. Install Python if you dont have one, Go to thier official website
+to learn more about python to Proceed to next Step.
+

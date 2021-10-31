@@ -1,0 +1,54 @@
+Using Terminal/CMD/Command Prompt/Powershell
+
+1. Install PIP
+
+>#If using linux/imac(Apple) system - Type
+
+python -m pip install --user --upgrade pip
+or
+python3 -m pip install --user --upgrade pip
+
+**Note ** > use Python3 if u have latest version,
+			python if you have old version
+
+>#If using Microsoft Windows system - Type
+
+py -m pip install --upgrade pip
+
+2.Install virtualenv
+
+>#On linux/imac(Apple) system - Type
+
+python -m pip install --user virtualenv
+0r
+python3 -m pip install --user virtualenv
+
+>#On Microsoft Windows system - Type
+py -m pip install --user virtualenv
+
+3. Create a virtual environment
+
+Linux/imac(Apple) -> python -m venv env
+					 python3 -m venv env
+
+Microsoft Windows -> py -m venv env
+
+4. Activating a virtual environment
+
+Linux/imac(Apple) -> source env/bin/activate
+
+Microsoft Windows -> .\env\Scripts\activate
+
+Deactivate > To deactivate
+
+5. Confirm/Check
+
+Linux/imac(Apple) -> which python
+
+Microsoft Windows -> where python
+
+If This a result you get -> /home/computer/MyDev/TutsDjango/02.Setup Needed Tools/env/bin/python
+
+Then You good to go to next step/Folder
+
+**Check ScreenShot For an examples

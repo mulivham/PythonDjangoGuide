@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}{{ object.title }}{% endblock %}
+
+{% load static %}
+{% block header_extends %}
+    <link rel="stylesheet" href="{% static 'objects.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-body">
+                            
+
+                <h3>-</h3>
+                <h1>LIST OF POSTS/ISSUES</h1>
+                <hr>
+                {{ fobject_list }}
+                {% for instance in object_list %}
+                <p>{{ instance.id }} - <a href='{{ instance.get_absolute_url }}'> {{ instance.title }}</a></p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Django With Mulivha
+{% endblock %}
+
+{% block header_extends %}
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+{% endblock %}
+
+{% block content %}
+<!---
+    <h3 class="home-content"> DJANGO WITH MULIVHA</h3>
+
+-->
+
+	<div>
+	<img src="{% static 'img/Django_With_Mulivha.jpg'%}" class="img-responsive" />
+	</div>
+    
+{% endblock %}
+

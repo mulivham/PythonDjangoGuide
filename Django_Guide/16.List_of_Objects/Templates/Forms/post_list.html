@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+	<h2> LIST OF POSTS/ISSUES </h2>
+    <hr>
+
+{{ fobject_list }}
+
+{% for instance in object_list %}
+	<p>
+		{{ instance.id }} - {{ instance.title }}
+	</p>
+
+{% endfor %}
+
+{% endblock content %}

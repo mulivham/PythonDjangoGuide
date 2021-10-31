@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+<!--- ------------ Next ---------------- --->
+
+{% block title %} List {% endblock %}
+
+<!--- ------------ Next ---------------- --->
+
+{% load static %}
+<!--- ------------ Next ---------------- --->
+{% block header_extends %}
+
+<h1>LIST OF POSTS/ISSUES</h1>
+<hr>
+
+{% endblock %}
+<!--- ------------ Next ---------------- --->
+
+{% block content %}
+
+                {{ fobject_list }}
+                {% for instance in object_list %}
+
+                <p>
+                    {{ instance.id }} - <a href='{{ instance.get_absolute_url }}'> {{ instance.title }}</a>
+                </p>
+
+                {% endfor %}
+
+{% endblock %}

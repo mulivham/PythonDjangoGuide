@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}{{ object.title }}{% endblock %}
+
+{% load static %}
+{% block header_extends %}
+    <link rel="stylesheet" href="{% static 'objects.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1">
+                <h3>-</h3>
+                <h1>CONTACT</h1>
+                <hr>
+                <p>
+                	<li>{{email_address}}</li>
+                	<li>{{my_number}}</li>
+                	<li>{{social_media}}</li>
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

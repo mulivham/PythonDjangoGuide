@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+<!--- ------------ Next ---------------- --->
+
+{% block title %} Delete {% endblock %}
+
+{% block header_extends %}
+
+<h1>LIST OF POSTS/ISSUES</h1>
+<hr>
+{% endblock %}
+
+<!--- ------------ Next ---------------- --->
+
+{% block content %}
+
+                <form action= '.' method = 'POST'> {% csrf_token %}
+                    <p> Are you sure you want to delete </p> <h1>"{{ object.title}}"? </h1>
+                    <p><input type = 'submit' value = 'Yes'/> <a href='../'>Cancel</a></p>
+                <form>
+
+{% endblock %}

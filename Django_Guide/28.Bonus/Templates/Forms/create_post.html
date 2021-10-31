@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+<!--- ------------ Next ---------------- --->
+
+{% block title %}Create{% endblock %}
+
+<!--- ------------ Next ---------------- --->
+
+{% block header_extends %}
+
+<hr>
+<h1>CREATE POSTS</h1>
+
+
+{% endblock %}
+
+<!--- ------------ Next ---------------- --->
+
+
+{% block content %}
+
+                <form method="POST" action="." enctype="multipart/form-data">{% csrf_token %} {{ form.as_p }}
+                <input type="submit" value="Save"/>
+                </form>
+
+{% endblock %}
